@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 120 20% 98%;
+    --foreground: 120 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 10% 15%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 120 20% 95%;
+    --secondary-foreground: 120 10% 15%;
+
+    --muted: 120 15% 92%;
+    --muted-foreground: 120 10% 45%;
+
+    --accent: 35 100% 65%;
+    --accent-foreground: 120 10% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 20% 88%;
+    --input: 120 20% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 120 15% 96%;
+    --sidebar-foreground: 120 10% 20%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 120 20% 90%;
+    --sidebar-accent-foreground: 120 10% 15%;
+    --sidebar-border: 120 20% 85%;
+    --sidebar-ring: 142 76% 36%;
+
+    /* Custom eco-friendly colors */
+    --eco-green: 142 76% 36%;
+    --eco-light-green: 120 60% 92%;
+    --eco-orange: 35 100% 65%;
+    --eco-blue: 200 100% 85%;
+    --eco-yellow: 48 100% 88%;
+    --eco-gray: 120 5% 50%;
+  }
+
+  .dark {
+    --background: 120 15% 8%;
+    --foreground: 120 20% 95%;
+
+    --card: 120 15% 12%;
+    --card-foreground: 120 20% 95%;
+
+    --popover: 120 15% 12%;
+    --popover-foreground: 120 20% 95%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 120 15% 8%;
+
+    --secondary: 120 15% 18%;
+    --secondary-foreground: 120 20% 85%;
+
+    --muted: 120 15% 18%;
+    --muted-foreground: 120 15% 60%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 120 15% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 120 20% 95%;
+
+    --border: 120 15% 22%;
+    --input: 120 15% 22%;
+    --ring: 142 70% 45%;
+
+    --sidebar-background: 120 15% 10%;
+    --sidebar-foreground: 120 20% 90%;
+    --sidebar-primary: 142 70% 45%;
+    --sidebar-primary-foreground: 120 15% 8%;
+    --sidebar-accent: 120 15% 20%;
+    --sidebar-accent-foreground: 120 20% 85%;
+    --sidebar-border: 120 15% 25%;
+    --sidebar-ring: 142 70% 45%;
+
+    /* Custom eco-friendly colors for dark mode */
+    --eco-green: 142 70% 45%;
+    --eco-light-green: 120 30% 15%;
+    --eco-orange: 35 90% 55%;
+    --eco-blue: 200 80% 25%;
+    --eco-yellow: 48 90% 25%;
+    --eco-gray: 120 10% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
